@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horário</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="style-home.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Agendamento</h1>
+    </header>
+
+    <main>
+        <form id="agendamento-form">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Endereço de E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" required>
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agendamento</legend>
+
+                <label for="data-agendamento">Data do Agendamento:</label>
+                <input type="date" id="data-agendamento" required>
+
+                <label for="horario">Horário:</label>
+                <select id="horario" required>
+                    <option value="">Selecione um horário</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <section id="agendamentos">
+            <h2>Agenda de Horários</h2>
+            <ul id="lista-agendamentos"></ul>
+        </section>
+    </main>
+
+    <script src="contato.js"></script>
+</body>
+</html>

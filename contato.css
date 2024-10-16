@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    color: #b03060;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #b03060;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #b03060;
+}
+
+button {
+    background-color: #b03060;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+#agendamentos {
+    margin-top: 20px;
+}
+
+#lista-agendamentos {
+    list-style-type: none;
+    padding: 0;
+}
+
